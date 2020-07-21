@@ -1,0 +1,17 @@
+$mainFonts: "Oswald",  "sans-serif";
+$secondaryFonts: "Arial";
+
+@mixin typeHeading {
+  font-family: $mainFonts;
+  font-size: 36px;
+  line-height: 60px;
+  color: #111111;
+  font-weight: 500;
+}
+
+@mixin typeText {
+  font-family: $secondaryFonts;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}

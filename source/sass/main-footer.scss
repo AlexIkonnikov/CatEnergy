@@ -1,0 +1,51 @@
+.main-footer {
+  &__wrapper {
+    display: flex;
+    margin: 25px 0;
+  }
+}
+
+.main-footer__invite {
+  margin-right: 18px;
+  font-family: $mainFonts;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  font-weight: 500;
+}
+
+.main-footer__address {
+  margin: 0;
+  font-family: $secondaryFonts;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.main-footer__map {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.main-footer__tittle-logo {
+  width: 128px;
+  height: 24px;
+  padding: 0 75px;
+  margin-bottom: 31px;
+}
+
+.main-footer__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 22px;
+}
+
+.main-footer__dev {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $secondaryFonts;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
+}

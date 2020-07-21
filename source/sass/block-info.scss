@@ -1,0 +1,19 @@
+.block-info {
+  background-image: url("../img/index-background-mobile.jpg");
+
+  &__heading {
+    font-family: $mainFonts;
+    color: white;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: normal;
+  }
+
+  &__tagline {
+    font-family: $mainFonts;
+    color: white;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: normal;
+  }
+}

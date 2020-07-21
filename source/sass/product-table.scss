@@ -1,0 +1,18 @@
+.product-table {
+  margin: 0;
+  width: 140px;
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: $secondaryFonts;
+    font-size: 12px;
+    line-height: 16px;
+    color: #444444;
+  }
+
+  &__row:last-child {
+    flex-basis: auto;
+  }
+}

@@ -1,0 +1,6 @@
+.main-content {
+  &__heading {
+    @include typeHeading;
+    margin: 0;
+  }
+}

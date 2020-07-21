@@ -1,0 +1,23 @@
+.how-it-work {
+  &__heading {
+    @include typeHeading;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    font-family: $secondaryFonts;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &__img {
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+}

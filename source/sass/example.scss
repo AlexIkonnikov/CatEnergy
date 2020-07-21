@@ -1,0 +1,67 @@
+.example {
+  background-color: #f2f2f2;
+
+  &__heading {
+    @include typeHeading;
+  }
+
+  &__text {
+    @include typeText;
+  }
+
+  &__statistics {
+
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__term {
+    font-family: $secondaryFonts;
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &__value {
+    font-family: $mainFonts;
+    font-size: 24px;
+    line-height: 24px;
+    margin: 0;
+  }
+
+  &__expenses {
+    font-family: $mainFonts;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__img {
+
+  }
+}
+
+.example__span {
+  font-family: $mainFonts;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.example__wrapper--space-around {
+  justify-content: center;
+  align-items: center;
+}
+
+.exaple__form {
+  width: 84px;
+  height: 14px;
+  margin: 0 20px;
+  border: none;
+  margin-bottom: 38px;
+}

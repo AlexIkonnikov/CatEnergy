@@ -1,0 +1,27 @@
+.programm {
+  background-color: #f2f2f2;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__heading {
+    font-family: $mainFonts;
+    font-size: 24px;
+    line-height: 37px;
+    font-weight: 400;
+  }
+
+  &__text {
+    @include typeText;
+  }
+
+  &__button {
+    font-family: $mainFonts;
+    font-size: 16px;
+    line-height: 16px;
+    color: #111111;
+    text-decoration: none;
+  }
+}
