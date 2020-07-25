@@ -1,13 +1,14 @@
 .show-product {
+
   &__text {
-  display: block;
-  text-align: center;
-  margin-bottom: 12px;
-  font-family: $mainFonts;
-  font-size: 16px;
-  line-height: 20px;
-  color: #111111;
-  font-weight: 500;
+    display: block;
+    text-align: center;
+    margin-bottom: 12px;
+    font-family: $mainFonts;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+    font-weight: 500;
   }
 
   &__some-text {

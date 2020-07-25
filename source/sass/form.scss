@@ -1,0 +1,42 @@
+.form {
+
+  &__heading {
+    @include typeHeading;
+    margin: 0;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    margin: 0;
+    padding-bottom: 40px;
+    font-family: $mainFonts;
+    font-size: 14px;
+    line-height: 18px;
+    color: #111111;
+  }
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__button {
+    border: none;
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 7px;
+    margin-top: 34px;
+    margin-bottom: 22px;
+  }
+
+  &__note {
+    display: block;
+    text-align: center;
+    font-family: $secondaryFonts;
+    font-size: 14px;
+    line-height: 16px;
+    color: #444444;
+  }
+}
