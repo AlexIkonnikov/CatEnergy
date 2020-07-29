@@ -1,0 +1,19 @@
+.social-list {
+  padding-left: 73px;
+  padding-right: 81px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 62px;
+  &__item {
+    align-self: center;
+  }
+}
+
+@media (min-width:768px) {
+  .social-list {
+    padding: 0;
+    height: auto;
+    min-width: 130px;
+  }
+}

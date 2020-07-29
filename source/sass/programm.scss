@@ -1,6 +1,7 @@
 .programm {
   background-color: #f2f2f2;
 
+
   &__wrapper {
     display: flex;
     flex-direction: row-reverse;
@@ -23,5 +24,18 @@
     line-height: 16px;
     color: #111111;
     text-decoration: none;
+  }
+}
+
+@media (min-width:768px) {
+  .programm {
+  min-height: 372px;
+  }
+}
+
+@media (min-width:1440px) {
+  .programm {
+    width: 570px;
+    min-height: 372px;
   }
 }

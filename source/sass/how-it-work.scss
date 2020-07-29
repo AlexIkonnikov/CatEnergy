@@ -1,6 +1,8 @@
 .how-it-work {
   &__heading {
     @include typeHeading;
+    margin-top: 20px;
+    margin-bottom: 23px;
   }
 
   &__list {
@@ -11,13 +13,50 @@
   &__item {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
     font-family: $secondaryFonts;
     font-size: 14px;
     line-height: 18px;
+    &:last-child {
+      margin-bottom: 42px;
+    }
   }
 
   &__img {
     margin-right: 20px;
-    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:768px) {
+
+  .how-it-work__heading {
+    font-size: 60px;
+    margin-top: 51px;
+    margin-bottom: 63px;
+  }
+
+  .how-it-work__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+
+  .how-it-work__item {
+    display: block;
+    width: 324px;
+    min-height: 192px;
+  }
+
+  .how-it-work__image {
+    display: block;
+  }
+}
+
+@media (min-width:1440px) {
+  .how-it-work__item {
+    width: 245px;
+
   }
 }

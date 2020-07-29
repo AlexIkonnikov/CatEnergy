@@ -3,6 +3,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navigation__list {
@@ -12,6 +13,16 @@
 }
 
 .navigation__toggle {
+  display: none;
   width: 18px;
   height: 18px;
 }
+
+@media (min-width:768px) {
+  .navigation {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+  }
+}
+

@@ -1,6 +1,36 @@
 .main-content {
+  box-sizing: border-box;
+
+  &__container {
+    padding: 0 20px;
+  }
+
   &__heading {
     @include typeHeading;
     margin: 0;
+  }
+
+  &__programm {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:768px) {
+
+  .main-content__container {
+    padding: 0 30px;
+  }
+  .main-content__programm {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width:1440px) {
+  .main-content__container {
+    padding: 0 110px;
+  }
+  .main-content__section-wrapper {
+    display: flex;
+    justify-content: space-between;
   }
 }
