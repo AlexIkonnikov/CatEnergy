@@ -41,3 +41,35 @@
     margin-bottom: 15px;
   }
 }
+
+@media (min-width:768px) {
+  .additional-product__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 37px 29px 37px;
+  }
+  .additional-product__button {
+    width: 633px;
+  }
+}
+
+@media (min-width:1440px) {
+
+  .additional-product__list {
+    width: 895px;
+  }
+
+  .additional-product__item {
+    padding: 0;
+  }
+
+  .additional-product__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-product__button {
+    width: 245px;
+  }
+}

@@ -1,4 +1,4 @@
-.info-about {
+.info-about-master {
 
   border: 0;
   padding: 0;
@@ -52,7 +52,13 @@
 }
 
 @media (min-width:1440px) {
-  .info-about {
+  .info-about-master__wrapper-label {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .info-about-master__label {
     width: 570px;
   }
 }

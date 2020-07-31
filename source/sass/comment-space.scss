@@ -1,7 +1,11 @@
 .comment-space {
   display: flex;
+  flex-direction: column;
   max-width: 320px;
   box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  padding: 0;
 
 
   &__legend {

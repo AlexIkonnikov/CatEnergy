@@ -15,3 +15,27 @@
     color: #ffffff;
   }
 }
+
+@media (min-width:768px) {
+  .present {
+    background-image: url("../img/gift-photo-tablet.png");
+    width: 708px;
+    height: 200px;
+    background-repeat: no-repeat;
+    position: relative;
+    &__info {
+      position: absolute;
+      top:75px;
+      left: 423px;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width:1440px) {
+  .present {
+    background-image: url("../img/gift-photo-mobile.jpg");
+    width: 245px;
+    height: 289px;
+  }
+}

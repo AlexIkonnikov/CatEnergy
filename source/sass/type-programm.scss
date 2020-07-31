@@ -1,5 +1,7 @@
 .type-programm {
   box-sizing: border-box;
+  border: 0;
+  padding: 0;
   padding: 22px 0;
   display: flex;
   flex-direction: column;
@@ -14,5 +16,12 @@
 
   &__input-radio {
     margin-right: 16px;
+  }
+}
+
+@media (min-width:1440px) {
+  .type-programm {
+    width: 570px;
+    border: 1px solid #e7e7e7;
   }
 }

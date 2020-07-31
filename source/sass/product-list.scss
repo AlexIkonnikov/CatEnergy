@@ -26,3 +26,36 @@
     padding-right: 50px;
   }
 }
+
+@media (min-width:768px) {
+  .product-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .product-list__item {
+    width: 324px;
+
+  }
+}
+
+@media (min-width:1440px) {
+  .product-list__item {
+    width: 245px;
+    min-height: 431px;
+  }
+
+  .product-list__wrapper {
+    flex-direction: column;
+  }
+
+  .product-list__table-wrapper {
+    order:2;
+  }
+
+  .product-list__img {
+    order: 1;
+  }
+}

@@ -1,6 +1,13 @@
 .additionally {
-  display: flex;
-  flex-direction: column;
+  border: 0;
+  padding: 0;
+  padding: 0;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
 
   &__legend {
     margin-bottom: 20px;
@@ -21,5 +28,17 @@
 
   &__checkbox {
     margin-right: 16px;
+  }
+}
+
+
+@media (min-width:768px) {
+  .additionally__wrapper {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .additionally__label {
+    width: 290px;
   }
 }
