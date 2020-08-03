@@ -1,14 +1,18 @@
 .example {
   background-color: #f2f2f2;
-  padding: 20px 20px 35px 20px;
+  padding: 20px 20px 37px 20px;
 
   &__heading {
     @include typeHeading;
     margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
   }
 
   &__text {
     @include typeText;
+    margin: 0;
+    margin-bottom: 28px;
   }
 
   &__statistics {
@@ -23,22 +27,55 @@
   &__list {
     display: flex;
     flex-direction: column-reverse;
+    box-sizing: border-box;
+    width: 125px;
+
+    margin: 0;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 125px;
+      height: 55px;
+      box-sizing: border-box;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border: solid 1px #cdcdcd;
+      border-radius: 5px;
+    }
   }
 
   &__term {
+    width: 90px;
     font-family: $secondaryFonts;
     font-size: 12px;
     line-height: 12px;
+    color: #444444;
+    text-transform: lowercase;
+    margin: 0 auto;
+    text-align: center;
+    z-index: 2;
+    background-color: #f2f2f2;
   }
 
   &__value {
     font-family: $mainFonts;
     font-size: 24px;
     line-height: 24px;
-    margin: 0;
+    margin: 0 auto;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-bottom: 10px;
   }
 
   &__expenses {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
     font-family: $mainFonts;
     font-size: 14px;
     line-height: 20px;
@@ -49,7 +86,15 @@
   }
 
   &__img--before {
-    position: absolute;
+
+  }
+
+  &__img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 280px;
+    height: 235px;
   }
 }
 
@@ -57,6 +102,7 @@
   font-family: $mainFonts;
   font-size: 16px;
   line-height: 20px;
+  text-transform: uppercase;
 }
 
 .example__wrapper--space-around {
@@ -69,22 +115,31 @@
   height: 14px;
   margin: 0 20px;
   border: none;
-  margin-bottom: 38px;
 }
 
 @media (min-width:768px) {
 
   .example {
-    padding: 20px 30px 35px 30px;
+    padding: 45px 0px 0px 0px;
     background-color: white;
+    border-top: 1px solid  #e6e6e6;
   }
+
+  .example__first-wrapper{
+    padding-bottom: 250px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   .example__heading {
-    font-size: 60px;;
+    font-size: 60px;
+    margin-bottom: 60px;
   }
 
   .example__text {
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 55px;
   }
 
   .example__statistics {
@@ -101,8 +156,13 @@
   }
 
   .example__expenses {
+    width: 175px;
+    text-align: right;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-top: 10px;
   }
 
   .example__value {
@@ -113,11 +173,41 @@
   .example__term {
     font-size: 14px;
     line-height: 14px;
+    width: 140px;
+    background-color: white;
   }
 
   .example__before-after {
     min-height: 462px;
     background-color: #f2f2f2;
+    position: relative;
+  }
+  .example__list {
+    width: 162px;
+    &::after {
+      width: 162px;
+      height: 72px;
+    }
+  }
+
+  .example__wrapper--space-around {
+    padding-top: 370px;
+  }
+
+  .example__img {
+    width: 677px;
+    height: 499px;
+    position: absolute;
+    top:-150px;
+    left: 46px;
+  }
+
+  .exaple__form {
+    width: 428px;
+  }
+
+  .example__span {
+    font-size: 20px;
   }
 }
 
@@ -128,13 +218,50 @@
     justify-content: space-between;
     padding: 0 110px;
     background-color: #f2f2f2;
+    border: none;
+  }
+
+  .example__heading {
+    position: absolute;
+    top: -140px;
+  }
+
+  .example__text {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 435px;
   }
 
   .example__first-wrapper {
     width: 570px;
+    position: relative;
+    padding: 0;
+  }
+
+  .example__wrapper {
+    margin-bottom: 45px;
+  }
+
+  .example__expenses {
+    width: 330px;
+    text-align: start;
   }
 
   .example__before-after {
     width: 570px;
+  }
+
+  .example__term {
+    background-color: #f2f2f2;
+  }
+
+  .example__img {
+    top: -170px;
+    left: -83px;
+  }
+
+  .example__statistics {
+    width: 363px;
+    flex-wrap: wrap;
   }
 }

@@ -1,25 +1,42 @@
 .programm {
   background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 25px 25px 15px 20px;
 
 
   &__wrapper {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   &__heading {
     font-family: $mainFonts;
+    margin: 0;
+    order:2;
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
+    text-transform: uppercase;
+    padding-top: 10px;
+  }
+
+  &__img {
+    order:1;
+    margin-right: 20px;
   }
 
   &__text {
     @include typeText;
+    margin: 0;
+    margin-top: 26px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #e6e6e6;
   }
 
   &__button {
     font-family: $mainFonts;
+    text-transform: uppercase;
     font-size: 16px;
     line-height: 16px;
     color: #111111;
@@ -29,13 +46,79 @@
 
 @media (min-width:768px) {
   .programm {
-  min-height: 372px;
+    min-height: 372px;
+    padding: 80px 60px 60px 50px;
+
+    &__wrapper {
+      position: relative;
+    }
+
+    &__heading {
+      order:1;
+      font-size: 36px;
+      line-height: 37px;
+      padding: 0;
+    }
+
+    &__img {
+      width: 200px;
+      height: 200px;
+      order: 2;
+      position: absolute;
+      left: 395px;
+      top: 10px;
+    }
+
+    &__text {
+      margin-top: 26px;
+      margin-bottom: 51px;
+      padding: 0;
+      border: none;
+      width: 372px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__button {
+      font-size: 20px;
+      line-height: 20px;
+    }
   }
+
+
 }
 
 @media (min-width:1440px) {
   .programm {
     width: 570px;
     min-height: 372px;
+    padding: 47px 53px 55px 52px;
+
+    &__heading {
+    order:2;
+    font-size: 36px;
+    line-height: 37px;
+    align-self: center;
+    flex-shrink: 0;
+    }
+
+    &__wrapper {
+      position: static;
+    }
+
+    &__img {
+      width: 100px;
+      height: 100px;
+      margin-right: 64px;
+      order: 1;
+      position: static;
+    }
+
+    &__text {
+      width: auto;
+      margin-top: 45px;
+      margin-bottom: 35px;
+    }
   }
 }

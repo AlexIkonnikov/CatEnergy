@@ -11,6 +11,7 @@
   }
 
   &__programm {
+    margin-top: 22px;
     margin-bottom: 20px;
   }
 }
@@ -21,8 +22,8 @@
     padding: 0 30px;
   }
   .main-content__programm {
+    margin-top: 0;
     margin-bottom: 30px;
-    margin: 0 auto;
   }
 }
 
@@ -40,5 +41,10 @@
 
   .main-content__wrapper {
     display: flex;
+  }
+
+  .main-content__programm {
+    margin-top: 135px;
+    margin-bottom: 0px;
   }
 }
