@@ -1,8 +1,9 @@
 .info-about {
-
   border: 0;
+  border-bottom: 1px solid #ededed;
   padding: 0;
-  padding: 0;
+  padding: 0 20px;
+  margin: 0;
 
   &__legend {
     margin-bottom: 30px;
@@ -51,8 +52,43 @@
   }
 }
 
+@media (min-width:768px) {
+  .info-about {
+    border: none;
+    padding: 0;
+
+    &__label {
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 60px;
+      }
+    }
+
+    &__span {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__input {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+}
+
 @media (min-width:1440px) {
   .info-about {
     width: 570px;
+
+    &__label {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__input {
+      padding: 10px 5px 10px 20px;
+    }
   }
 }

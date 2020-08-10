@@ -3,15 +3,21 @@
   &__heading {
     @include typeHeading;
     margin: 0;
-    padding-top: 12px;
-    padding-bottom: 20px;
+    font-weight: 400;
+    margin: 20px 0;
+  }
+
+  &__header {
+    padding: 0 20px;
   }
 
   &__text {
+    width: 230px;
     margin: 0;
-    padding-bottom: 40px;
+    margin-bottom: 38px;
     font-family: $mainFonts;
     font-size: 14px;
+    text-transform: uppercase;
     line-height: 18px;
     color: #111111;
   }
@@ -24,15 +30,17 @@
 
   &__button {
     border: none;
+    margin:  0 auto;
     font-size: 16px;
     line-height: 20px;
     padding-top: 7px;
     margin-top: 34px;
-    margin-bottom: 22px;
+    margin-bottom: 15px;
   }
 
   &__note {
     display: block;
+    margin-bottom: 35px;
     text-align: center;
     font-family: $secondaryFonts;
     font-size: 14px;
@@ -43,30 +51,82 @@
 
 
 @media (min-width:768px) {
-  .form__heading {
-    font-size: 60px;
-    line-height: 60px;
-  }
+  .form{
+    padding: 0 30px;
 
-  .form__text {
-    font-size: 20px;
-    line-height: 30px;
-  }
+    &__header {
+      padding: 0;
+    }
 
-  .form__fieldset {
-    padding-left: 40px;
-    padding-right: 35px;
+    &__heading {
+      margin-top: 0;
+      margin-bottom: 50px;
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__text {
+      width: 330px;
+      padding-left: 40px;
+      margin-bottom: 65px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    &__fieldset {
+      padding-left: 40px;
+      padding-right: 35px;
+    }
+
+    &__button {
+      display: inline-block;
+      height: 52px;
+      width: 283px;
+      margin-left: 0;
+      margin-top: 20px;
+      margin-bottom: 72px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__note {
+      display: inline-block;
+      margin-left: 60px;
+      font-size: 16px;
+    }
   }
 }
 
 @media (min-width:1440px) {
-  .form__fieldset {
-    padding: 0;
-  }
+  .form {
+    padding: 0 110px;
 
-  .form__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    &__heading {
+      margin-top: 50px;
+    }
+
+    &__fieldset {
+      padding: 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    &__text {
+      padding-left: 0;
+    }
+
+    &__button {
+      width: 568px;
+      margin-bottom: 80px;
+      margin-top: 30px;
+    }
+
+    &__note {
+      margin-left: 80px;
+    }
   }
 }

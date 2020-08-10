@@ -48,7 +48,7 @@
   }
 
   &__term {
-    width: 90px;
+    width: 65px;
     font-family: $secondaryFonts;
     font-size: 12px;
     line-height: 12px;
@@ -79,6 +79,7 @@
     font-family: $mainFonts;
     font-size: 14px;
     line-height: 20px;
+    text-transform: uppercase;
   }
 
   &__before-after {

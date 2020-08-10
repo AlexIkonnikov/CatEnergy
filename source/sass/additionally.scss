@@ -1,7 +1,6 @@
 .additionally {
   border: 0;
-  padding: 0;
-  padding: 0;
+  padding: 0 20px;
 
   &__wrapper {
     display: flex;
@@ -10,35 +9,79 @@
   }
 
   &__legend {
-    margin-bottom: 20px;
+    margin-bottom: 35px;
     font-family: $mainFonts;
     font-size: 24px;
     line-height: 24px;
     color: #111111;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   &__label {
     @include lableFonts;
     margin-bottom: 13px;
+    display: flex;
+    align-items: center;
     &:last-child {
       margin-bottom: 0px;
     }
   }
 
   &__checkbox {
+    width: 30px;
+    height: 30px;
+    margin: 0;
     margin-right: 16px;
   }
 }
 
 
 @media (min-width:768px) {
-  .additionally__wrapper {
-    flex-wrap: wrap;
-    flex-direction: row;
+  .additionally {
+    padding: 0;
+
+    &__wrapper {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 628px;
+    }
+
+    &__legend {
+      margin-bottom: 55px;
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__label {
+      margin-right: 0px;
+      margin-bottom: 32px;
+      width: 284px;
+      font-size: 20px;
+      line-height: 20px;
+
+      &:last-child {
+        margin-bottom: 32px;
+      }
+    }
+
+    &__checkbox {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media (min-width:1440px) {
+  .additionally {
+
+    &__wrapper {
+      width: 1220px;
+    }
+
+    &__label {
+      width: 245px;
+    }
   }
 
-  .additionally__label {
-    width: 290px;
-  }
 }

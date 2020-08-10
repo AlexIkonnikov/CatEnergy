@@ -1,13 +1,19 @@
 .type-programm {
+  margin: 0;
   box-sizing: border-box;
   border: 0;
   padding: 0;
-  padding: 22px 0;
+  padding: 22px 20px;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #ededed;
 
   &__label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     @include lableFonts;
+    min-height: 30px;
     margin-bottom: 13px;
     &:last-child {
       margin-bottom: 0px;
@@ -15,8 +21,30 @@
   }
 
   &__input-radio {
-    margin-right: 16px;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+    margin-right: 10px;
   }
+}
+
+@media (min-width:768px) {
+  .type-programm {
+    padding-left: 25px;
+    border: 2px solid #ededed;
+
+    &__label {
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    &__input-radio {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+    }
+  }
+
 }
 
 @media (min-width:1440px) {

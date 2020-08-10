@@ -5,6 +5,15 @@ const autoprefixer = require("autoprefixer");
 const plumber = require("gulp-plumber");
 const browserSync = require("browser-sync").create();
 const gulpStylelint = require('gulp-stylelint');
+const concat = require('gulp-concat');
+
+function buildjs () {
+  return (
+    gulp.src(['source/js/*.js' , '!source/js/app.js'])
+    .pipe(concat('app.js'))
+    .pipe(gulp.dest('source/js'))
+  );
+}
 
 function style() {
   return (
@@ -42,6 +51,7 @@ function LintCss(){
     }));
 }
 
+exports.buildjs = buildjs;
 exports.serve = serve;
 exports.style = style;
 exports.LintCss = LintCss;

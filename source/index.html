@@ -15,8 +15,8 @@
           <img class="main-header__logo logo" width="33" height="38" src="http://placehold.it/150x100" alt="Логотип КэтЭнерджи">
           <img class="main-header__title-logo" src="http://placehold.it/101x18" width="101" height="18" alt="Надпись Cat Energy">
         </div>
-        <nav class="navigation main-header__navigation">
-          <button class="navigation__toggle" type="button">Открыть меню</button>
+        <nav class="navigation navigation--open main-header__navigation">
+          <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="navigation__list header-list">
             <li class="header-list__item header-list__item--active header-list__item--active-white"><a href="#" class="header-list__link header-list__link--white">Главная</a></li>
             <li class="header-list__item"><a href="catalog.html" class="header-list__link header-list__link--white">Каталог продукции</a></li>
@@ -63,14 +63,10 @@
         <section class="how-it-work">
           <h3 class="how-it-work__heading">Как это работает</h3>
           <ul class="how-it-work__list">
-            <div class="how-it-work__wrapper">
-              <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--leaf" src="http://placehold.it/60x60" alt="Лист с дерева">Функциональное питание содержит только полезные питательные вещества.</li>
-              <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--bucket" src="http://placehold.it/60x60" alt="Ёмкость">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-            </div>
-            <div class="how-it-work__wrapper">
-              <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--cutlery" src="http://placehold.it/60x60" alt="Нож и вилка">Замените один-два приема обычной еды на наше функциональное питание.</li>
-             <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--clock" src="http://placehold.it/60x60" alt="Часы">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
-            </div>
+            <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--leaf" src="http://placehold.it/60x60" alt="Лист с дерева">Функциональное питание содержит только полезные питательные вещества.</li>
+            <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--bucket" src="http://placehold.it/60x60" alt="Ёмкость">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
+            <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--cutlery" src="http://placehold.it/60x60" alt="Нож и вилка">Замените один-два приема обычной еды на наше функциональное питание.</li>
+            <li class="how-it-work__item"><img class="how-it-work__img how-it-work__img--clock" src="http://placehold.it/60x60" alt="Часы">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
           </ul>
         </section>
       </div>
@@ -118,7 +114,11 @@
         Санкт-Петербург
         </p>
       </div>
-      <img class="main-footer__map" src="http://placehold.it/150x100" alt="Карта">
+
+      <div class="main-footer__map-wrapper">
+        <img class="main-footer__map" src="http://placehold.it/150x100" alt="Карта">
+        <iframe class="main-footer__interactive-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1596955931689!5m2!1sru!2sru" width="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
 
       <div class="main-footer__second-wrapper">
         <img class="main-footer__tittle-logo" alt="Лого" src="http://placehold.it/128x24">
@@ -136,5 +136,6 @@
       </div>
 
     </footer>
+    <script src="js/app.js"></script>
   </body>
 </html>

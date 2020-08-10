@@ -4,21 +4,53 @@
   max-width: 320px;
   box-sizing: border-box;
   border: 0;
-  padding: 0;
-  padding: 0;
-
+  margin: 0;
+  padding: 0 20px;
 
   &__legend {
     margin-bottom: 30px;
+    padding: 0;
     font-family: $mainFonts;
     font-size: 24px;
     line-height: 24px;
     color: #111111;
-    font-weight: 500;
+    font-weight: 400;
   }
 
   &__textarea {
-    width: 100%;
+    width: 280px;
+    height: 150px;
+    box-sizing: border-box;
+    resize: none;
     flex-grow: 0;
+    margin-bottom: 31px;
+    padding: 15px;
+  }
+}
+
+@media (min-width:768px) {
+  .comment-space {
+    padding: 0;
+
+    &__legend {
+      font-size: 36px;
+      line-height: 36px;
+      margin-bottom: 70px;
+    }
+
+    &__textarea {
+      margin-bottom: 70px;
+      width: 631px;
+      height: 174px;
+    }
+  }
+}
+
+@media (min-width:1440px) {
+  .comment-space {
+
+    &__textarea {
+      width: 1220px;
+    }
   }
 }

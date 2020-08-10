@@ -4,11 +4,26 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 25px 20px;
+    padding: 27px 20px;
+
+    &--background {
+      background-color: #f2f2f2;
+    }
   }
 
   &__second-wrapper {
     padding: 0 20px;
+  }
+
+  &__map-wrapper {
+    position: relative;
+  }
+
+  &__interactive-map {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 362px;
   }
 }
 
@@ -19,6 +34,7 @@
   line-height: 20px;
   color: #111111;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .main-footer__address {
@@ -80,10 +96,13 @@
     height: 150px;
   }
 
+  .main-footer__interactive-map {
+    height: 397px;
+  }
+
   .main-footer__wrapper {
-    padding: 0 40px;
-    margin: 0 30px;
-    margin: 65px 30px 55px 30px;
+    padding: 65px 69px 55px 69px;
+    background-color: #f2f2f2;
   }
 
   .main-footer__tittle-logo {
@@ -122,6 +141,10 @@
 
   }
 
+  .main-footer__interactive-map {
+    height: 404px;
+  }
+
   .main-footer__map  {
     max-height: 400px;
   }
@@ -141,6 +164,7 @@
     width: 570px;
     min-height: 201px;
     background-color: white;
+    z-index: 1;
   }
 
   .main-footer__invite {

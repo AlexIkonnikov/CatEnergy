@@ -1,5 +1,5 @@
 .how-it-work {
-  padding-bottom: 42px;
+  padding: 0 20px;
   &__heading {
     @include typeHeading;
     margin-top: 20px;
@@ -10,6 +10,7 @@
   &__list {
     margin: 0;
     padding: 0;
+    margin-bottom: 40px;
   }
 
   &__item {
@@ -19,9 +20,6 @@
     font-family: $secondaryFonts;
     font-size: 14px;
     line-height: 18px;
-    &:last-child {
-      margin-bottom: 0px;
-    }
   }
 
   &__img {
@@ -31,6 +29,7 @@
 
 @media (min-width:768px) {
   .how-it-work {
+    padding: 0 30px;
     padding-bottom: 95px;
   }
 
@@ -46,6 +45,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-right: 75px;
+    margin-bottom: 0;
   }
 
   .how-it-work__item {
@@ -55,6 +55,9 @@
     margin-bottom: 0px;
     font-size: 16px;
     line-height: 24px;
+    &:first-child {
+      margin-bottom: 130px;
+    }
   }
 
   .how-it-work__img {
@@ -64,22 +67,13 @@
     height: 80px;
   }
 
-  .how-it-work__wrapper {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 130px;
-    width: 100%;
-    justify-content: space-between;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 
 
 @media (min-width:1440px) {
   .how-it-work {
-    padding-bottom: 260px;
+    padding: 0 110px;
+    padding-bottom: 135px;
 
     &__list {
       padding: 0;
@@ -92,11 +86,6 @@
 
     &__item {
       width: 245px;
-    }
-
-    &__wrapper {
-      width: 570px;
-      margin: 0;
     }
   }
 

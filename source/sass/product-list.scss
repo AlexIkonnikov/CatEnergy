@@ -1,11 +1,14 @@
 .product-list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style-type: none;
 
   &__item {
-    margin-bottom: 25px;
-    border-top: 1px solid #f2f2f2;
+    margin-bottom: 23px;
+    border-top: 2px solid #f2f2f2;
+    &:last-child {
+      margin-bottom: 25px;
+    }
   }
 
   &__wrapper {
@@ -25,37 +28,108 @@
     text-transform: uppercase;
     padding-right: 50px;
   }
+
+  &__button {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width:768px) {
   .product-list {
+    padding: 0 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-  }
 
-  .product-list__item {
-    width: 324px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 324px;
+      margin-bottom: 58px;
+      padding: 0 36px 40px 38px;
+      box-sizing: border-box;
+      border: none;
+      background-image: -ms-linear-gradient(bottom, white 82px, 82px, #f2f2f2);
+      background: linear-gradient(to bottom, white 82px, 82px, #f2f2f2);
 
+      &:last-child {
+        margin-bottom: 65px;
+        background: none;
+        border: 2px solid #f2f2f2;
+        margin-top: 85px;
+      }
+    }
+
+    &__table {
+      margin-bottom: 25px;
+    }
+
+    &__name {
+      font-size: 20px;
+      width: 135px;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__img {
+      order: 1;
+      margin: 0 auto;
+      margin-bottom: 45px;
+      width: 195px;
+      height: 208px;
+    }
+
+    &__img--small {
+      width: 163px;
+      height: 174px;
+      padding-top: 35px;
+    }
+
+    &__table-wrapper {
+      order: 2;
+    }
+
+    &__button {
+      width: 250px;
+      padding-top: 10px;
+      margin-top: auto;
+    }
   }
 }
 
 @media (min-width:1440px) {
-  .product-list__item {
-    width: 245px;
-    min-height: 431px;
-  }
 
-  .product-list__wrapper {
-    flex-direction: column;
-  }
+  .product-list {
+    padding: 0 110px;
 
-  .product-list__table-wrapper {
-    order:2;
-  }
+    &__item {
+      width: 245px;
+      min-height: 431px;
+    }
 
-  .product-list__img {
-    order: 1;
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__table-wrapper {
+      order:2;
+    }
+
+    &__img {
+      order: 1;
+    }
+    &__button {
+      width: 169px;
+    }
+
   }
 }
