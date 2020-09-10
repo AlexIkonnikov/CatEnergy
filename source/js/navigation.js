@@ -7,6 +7,10 @@ button.addEventListener('click' , function() {
     navigation.classList.remove('navigation--open');
     navigation.classList.add('navigation--close');
   }
+  else {
+    navigation.classList.remove('navigation--close');
+    navigation.classList.add('navigation--open');
+  }
 });
 
 

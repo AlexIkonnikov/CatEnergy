@@ -4,10 +4,11 @@
   list-style-type: none;
 
   &__item {
-    margin-bottom: 23px;
     border-top: 2px solid #f2f2f2;
+    min-height: 210px;
+    box-sizing: border-box;
     &:last-child {
-      margin-bottom: 25px;
+      margin-bottom: 32px;
     }
   }
 
@@ -20,7 +21,7 @@
   &__name {
     display: block;
     margin-top: 22px;
-    margin-bottom: 16px;
+    margin-bottom: 5px;
     font-family: $mainFonts;
     font-size: 16px;
     line-height: 20px;
@@ -78,18 +79,18 @@
 
     &__wrapper {
       flex-direction: column;
+      align-items: center;
     }
 
     &__img {
       order: 1;
       margin: 0 auto;
-      margin-bottom: 45px;
-      width: 195px;
+      margin-bottom: 35px;
+      width: 324px;
       height: 208px;
     }
 
     &__img--small {
-      width: 163px;
       height: 174px;
       padding-top: 35px;
     }
@@ -126,6 +127,7 @@
 
     &__img {
       order: 1;
+      width: 245px;
     }
     &__button {
       width: 169px;

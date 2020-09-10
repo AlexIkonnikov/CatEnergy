@@ -1,7 +1,18 @@
 .show-product {
-  padding-top: 85px;
+  padding-top: 72px;
   padding-bottom: 25px;
   border-bottom: 1px solid #f2f2f2;
+  position: relative;
+  &::before {
+    content: url(../img/icon-plus-mobile.svg);
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left:120px;
+    top: 24px;
+
+  }
 
   &__text {
     display: block;
@@ -43,13 +54,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    &::before {
+      width: 60px;
+      height: 60px;
+      left: 95px;
+      top: 60px;
+    }
     &__button {
       width: 250px;
       margin-top: auto;
     }
 
     &__text {
-      margin-left: 60px;
       margin-bottom: 28px;
       font-size: 20px;
       width: 140px;
@@ -58,7 +75,6 @@
 
     &__some-text {
       width: 170px;
-      margin-left: 40px;
       margin-bottom: 88px;
       font-size: 16px;
     }
@@ -67,6 +83,10 @@
 
 @media (min-width:1440px) {
   .show-product {
+    &::before {
+      left: 55px;
+      top: 55px;
+    }
 
     &__text {
       margin-left: 0;

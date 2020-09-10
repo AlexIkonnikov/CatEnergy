@@ -9,6 +9,11 @@
   &__item {
     align-self: center;
   }
+  &__item svg {
+    &:hover {
+      fill:#68b738;
+    }
+  }
 }
 
 @media (min-width:768px) {
@@ -16,5 +21,22 @@
     padding: 0;
     height: auto;
     min-width: 130px;
+    margin-top: 10px;
+    margin-left: 17px;
+
+    &__link--vk svg{
+      width: 30px;
+      height: 16px;
+    }
+
+    &__link--inst svg {
+      width: 23px;
+      height: 23px;
+    }
+
+    &__link--fb svg {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

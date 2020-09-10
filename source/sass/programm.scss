@@ -12,26 +12,37 @@
   &__heading {
     font-family: $mainFonts;
     margin: 0;
+    padding-top: 5px;
     order:2;
     font-size: 24px;
     line-height: 37px;
     font-weight: 400;
     text-transform: uppercase;
-    padding-top: 10px;
+
   }
 
-  &__img {
-    order:1;
-    margin-right: 20px;
+  &__img--sitting {
+    width: 35px;
+    height: 49px;
+    margin-top: -3px;
+  }
+
+  &__img--going {
+    width: 67px;
+    height: 28px;
   }
 
   &__text {
     @include typeText;
     margin: 0;
     margin-top: 26px;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    margin-bottom: 15px;
+    padding-bottom: 24px;
     border-bottom: solid 1px #e6e6e6;
+  }
+
+  &__text br {
+    display: none;
   }
 
   &__button {
@@ -41,13 +52,30 @@
     line-height: 16px;
     color: #111111;
     text-decoration: none;
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  &__bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__arrow {
+    margin-left: 10px;
   }
 }
 
 @media (min-width:768px) {
   .programm {
     min-height: 372px;
-    padding: 80px 60px 60px 50px;
+    padding: 75px 60px 60px 50px;
 
     &__wrapper {
       position: relative;
@@ -60,14 +88,17 @@
       padding: 0;
     }
 
-    &__img {
-      width: 200px;
-      height: 200px;
-      order: 2;
-      position: absolute;
-      left: 395px;
-      top: 10px;
+    &__img--sitting {
+      width: 140px;
+      height: 194px;
+      margin-top: -12px;
     }
+
+    &__img--going {
+      width: 268px;
+      height: 112px;
+    }
+
 
     &__text {
       margin-top: 26px;
@@ -80,9 +111,26 @@
       line-height: 24px;
     }
 
+    &__text br {
+      display: block;
+    }
+
     &__button {
       font-size: 20px;
       line-height: 20px;
+    }
+
+    &__bg {
+      width: 200px;
+      height: 200px;
+      order: 2;
+      position: absolute;
+      left: 395px;
+      top: 10px;
+    }
+
+    &__arrow {
+      margin-left: 25px;
     }
   }
 
@@ -93,7 +141,7 @@
   .programm {
     width: 570px;
     min-height: 372px;
-    padding: 47px 53px 55px 52px;
+    padding: 40px 53px 55px 52px;
 
     &__heading {
     order:2;
@@ -107,18 +155,32 @@
       position: static;
     }
 
-    &__img {
+    &__img--sitting {
+      width: 70px;
+      height: 97px;
+    }
+
+    &__img--going {
+      width: 134px;
+      height: 56px;
+    }
+
+    &__bg {
       width: 100px;
       height: 100px;
-      margin-right: 64px;
       order: 1;
       position: static;
+      margin-right: 64px;
     }
 
     &__text {
       width: auto;
-      margin-top: 45px;
+      margin-top: 37px;
       margin-bottom: 35px;
+    }
+
+    &__text br {
+      display: none;
     }
   }
 }
